@@ -6,4 +6,4 @@
 - Inside Create.py - Change the PATH and enter login information
 
 ### Using The Script
-- Type into the terminal 'create <name of folder>'
+- Type into the terminal 'create (name of folder)'
