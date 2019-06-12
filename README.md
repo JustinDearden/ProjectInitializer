@@ -1,3 +1,6 @@
+### Purpose
+Automatically create a folder locally and a Git repository on Github then begin the init process.
+
 ### Setup
 - cd into the folder 'ProjectInitializer'
 - Run the command (pip install -r requirements.txt)
