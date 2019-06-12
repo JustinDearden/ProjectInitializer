@@ -21,18 +21,16 @@ def remove():
 
     browser.get('https://github.com/' + username + '/' + reponame + '/settings')
 
-    python_button = browser.find_elements_by_xpath(
-        '//*[@id="options_bucket"]/div[9]/ul/li[4]/details/summary')[0]
+    python_button = browser.find_elements_by_xpath('//*[@id="options_bucket"]/div[9]/ul/li[4]/details/summary')[0]
     python_button.click()
-    python_button = browser.find_elements_by_xpath(
-        '//*[@id="options_bucket"]/div[9]/ul/li[4]/details/details-dialog/div[3]/form/p/input')[0]
+
+    python_button = browser.find_elements_by_xpath('//*[@id="options_bucket"]/div[9]/ul/li[4]/details/details-dialog/div[3]/form/p/input')[0]
     python_button.send_keys(reponame)
 
-    python_button = browser.find_elements_by_xpath(
-        '//*[@id="options_bucket"]/div[9]/ul/li[4]/details/details-dialog/div[3]/form/button')[0]
+    python_button = browser.find_elements_by_xpath('//*[@id="options_bucket"]/div[9]/ul/li[4]/details/details-dialog/div[3]/form/button')[0]
     python_button.click()
 
-    browser.get("https://github.com/" + username)
+    browser.get("https://github.com/" + username)  
 
 
 if __name__ == "__main__":
